@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fffbe6;
-    background-image: url('{{ url_for("static", filename="images/background-pattern.png") }}');
+    background-image: url('images/background-pattern.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -155,8 +155,12 @@ a:hover {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    header {
+        padding: 10px; /* Reduce header padding for smaller screens */
+    }
+
     header h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Smaller font size for the title on mobile */
     }
 
     nav {
@@ -168,7 +172,7 @@ a:hover {
     }
 
     .logo {
-        height: 120px;
+        height: 120px; /* Smaller logo for mobile */
     }
 
     main section {
