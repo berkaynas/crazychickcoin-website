@@ -42,8 +42,9 @@ header p {
 
 .logo-container {
     position: absolute;
-    top: 10px;
-    left: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 10; /* Keeps it above other elements */
 }
 
@@ -160,7 +161,17 @@ a:hover {
     }
 
     header h1 {
-        font-size: 2.5rem; /* Smaller font size for the title on mobile */
+        font-size: 1.8rem; /* Smaller font size for the title on mobile */
+        margin-top: 60px; /* Add space between logo and title */
+    }
+
+    .logo {
+        height: 100px; /* Make the logo smaller on mobile */
+        margin-bottom: 10px; /* Space between the logo and title */
+    }
+
+    header p {
+        display: none; /* Hide the text on mobile */
     }
 
     nav {
@@ -168,11 +179,7 @@ a:hover {
     }
 
     nav a {
-        font-size: 1.1rem;
-    }
-
-    .logo {
-        height: 120px; /* Smaller logo for mobile */
+        font-size: 1rem;
     }
 
     main section {
