@@ -8,6 +8,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 header {
@@ -47,14 +48,13 @@ header p {
 }
 
 .logo {
-    height: 200px; /* Increased size for better visibility */
+    height: 150px; /* Adjusted size for better visibility */
     width: auto;
-    border: none; /* Removes any white border */
-    border-radius: 50%; /* Keeps it circular */
-    box-shadow: none; /* Removes any added shadow */
-    background-color: transparent; /* Ensures no background color */
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    background-color: transparent;
 }
-
 
 nav {
     margin-top: 15px;
@@ -151,4 +151,46 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .logo {
+        height: 120px;
+    }
+
+    main section {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    main section h2 {
+        font-size: 1.6rem;
+    }
+
+    .memes img {
+        width: 100px;
+        margin: 8px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
 }
