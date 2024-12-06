@@ -179,7 +179,7 @@ a:hover {
         font-weight: 900;
         letter-spacing: 3px;
         text-shadow: 2px 2px #ffcc00;
-        margin-top: 100px; /* Add space between logo and title */
+        margin-top: 3px; /* Add space between logo and title */
     }
 
     header p {
