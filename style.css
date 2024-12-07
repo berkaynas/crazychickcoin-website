@@ -43,7 +43,7 @@ header p {
 /* Logo container - position on desktop */
 .logo-container {
     position: absolute;
-    top: 0; /* Keeps it at the top */
+    top: 30px; /* Keeps it at the top */
     left: 30px; /* Adjust space from the left */
     z-index: 10; /* Keeps it above other elements */
 }
