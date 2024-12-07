@@ -42,7 +42,7 @@ header p {
 
 .logo-container {
     position: absolute;
-    top: 20px; /* Added space from the top for desktop */
+    top: 0; /* Added space from the top for desktop */
     left: 30px; /* Added space from the left for desktop */
     transform: translateX(0);
     z-index: 10; /* Keeps it above other elements */
@@ -169,8 +169,8 @@ a:hover {
     /* Move logo above the About section */
     .logo-container {
         position: relative;
-        top: 0;
-        left: 50%;
+        top: 10px;
+        left: 10px;
         transform: translateX(-50%);
         padding-top: 10px;
         margin-top: 0;
