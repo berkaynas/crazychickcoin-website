@@ -42,9 +42,8 @@ header p {
 
 .logo-container {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 10px;
+    left: 20px;
     z-index: 10; /* Keeps it above other elements */
 }
 
@@ -157,38 +156,35 @@ a:hover {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     header {
-        padding: 10px; /* Reduce header padding for smaller screens */
+        padding: 10px;
         text-align: center;
     }
 
-    .logo-container {
-        position: absolute;
-        top: 20px; /* Adjust logo positioning */
-        left: 50%;
-        transform: translateX(-50%); /* Center the logo */
-        z-index: 10;
+    /* Remove the header subtitle text on mobile */
+    header p {
+        display: none;
     }
 
+    /* Move logo above the About section */
+    .logo-container-mobile {
+        text-align: center;
+        padding: 20px 0;
+        margin: 0;
+    }
+
+    /* Adjust logo size on mobile */
     .logo {
         height: 120px; /* Smaller logo for mobile */
     }
 
+    /* Adjust the title size */
     header h1 {
-        font-size: 2rem; /* Make the font smaller */
-        animation: bounce 2s infinite;
-        font-weight: 900;
-        letter-spacing: 3px;
-        text-shadow: 2px 2px #ffcc00;
-        margin-top: 30px; /* Add space between logo and title */
+        font-size: 2rem;
+        margin-top: 10px;
     }
 
-    header p {
-        display: none; /* Hide the text on mobile */
-    }
-
-    .memes img {
-        width: 100px;
-        margin: 8px;
+    main {
+        padding-top: 150px; /* To ensure enough space for the logo above the About section */
     }
 
     main section {
@@ -196,8 +192,9 @@ a:hover {
         margin: 10px;
     }
 
-    main section h2 {
-        font-size: 1.6rem;
+    .memes img {
+        width: 100px;
+        margin: 8px;
     }
 
     footer {
