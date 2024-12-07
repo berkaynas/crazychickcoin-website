@@ -40,11 +40,11 @@ header p {
     50% { transform: translateY(-15px); }
 }
 
+/* Logo container - position on desktop */
 .logo-container {
     position: absolute;
-    top: 0; /* Added space from the top for desktop */
-    left: 30px; /* Added space from the left for desktop */
-    transform: translateX(0);
+    top: 0; /* Keeps it at the top */
+    left: 30px; /* Adjust space from the left */
     z-index: 10; /* Keeps it above other elements */
 }
 
@@ -169,16 +169,16 @@ a:hover {
     /* Move logo above the About section */
     .logo-container {
         position: relative;
-        top: 10px;
-        left: 10px;
-        transform: translateX(-50%);
-        padding-top: 10px;
+        top: 10px;  /* Adjust the space above */
+        left: 50%;  /* Center the logo */
+        transform: translateX(-50%);  /* Center align */
         margin-top: 0;
+        padding-top: 0;  /* Remove unnecessary padding */
     }
 
     /* Adjust logo size on mobile */
     .logo {
-        height: 120px; /* Smaller logo for mobile */
+        height: 120px;  /* Smaller logo for mobile */
     }
 
     /* Adjust the title size */
@@ -188,7 +188,7 @@ a:hover {
     }
 
     main {
-        padding-top: 20px; /* Reduced padding to ensure spacing for logo */
+        padding-top: 50px; /* Reduced padding to ensure spacing for logo */
     }
 
     main section {
